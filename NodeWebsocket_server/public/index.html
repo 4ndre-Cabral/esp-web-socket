@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-socket-js/1.0.0/web_socket.min.js"></script>
+    <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+  <h2>Painel</h2>
+  <ul class="tg-list">
+    <li class="tg-list-item">
+      <h4>Lâmpada</h4>
+      <div>
+        <input class="tgl tgl-ios" id="cb2" type="checkbox"/>
+        <label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="cb2"></label>
+      </div>
+    </li>
+    <li class="tg-list-item">
+      <h4>Janela</h4>
+      <input class="tgl tgl-skewed" id="cb3" type="checkbox"/>
+      <label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="cb3"></label>
+    </li>
+  </ul>
+  <div id="prompt" class='container'>
+    <h4 id="message_prompt"></h4>
+    <div class='loader'>
+      <div class='ball first'></div>
+      <div class='ball second'></div>
+      <div class='ball third'></div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="/index.js" defer></script>
+</body>
+</html>
